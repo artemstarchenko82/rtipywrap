@@ -1,6 +1,5 @@
 # History files
 .Rhistory
-
 .Rapp.history
 # Session Data files
 .RData
@@ -29,3 +28,4 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 rtipywrap.Rproj
+.Rbuildignore
