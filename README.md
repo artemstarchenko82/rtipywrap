@@ -5,6 +5,18 @@
 Документация https://tinkoff.github.io/investAPI/  
 Python SDK https://tinkoff.github.io/invest-python/
 
+## Установка необходимых библиотек python
+Для работы необходимо установить следующие библиотеки: 
+
+```shell
+
+$ pip3 install tinkoff-investments
+$ pip3 install numpy
+$ pip3 install pandas 
+
+```
+
+
 
 ## Сохранение токена в .Renviron
 

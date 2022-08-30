@@ -5,7 +5,9 @@
 #' @export
 rti_accounts <- function(token = Sys.getenv("rti_TOKEN")){
     
-    reticulate::source_python("python/ti_functions.py")
+    reticulate::source_python(
+        system.file("python/ti_functions.py", package = "rtipywrap")
+    )
     
     get_my_accounts(token)
     
