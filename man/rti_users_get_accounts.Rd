@@ -10,5 +10,5 @@ rti_users_get_accounts(token = Sys.getenv("rti_TOKEN"))
 \item{token}{ваш токен API Tinkoff Invest}
 }
 \description{
-Используется метод https://tinkoff.github.io/investAPI/users/#getaccountsrequest
+Используется метод \url{https://tinkoff.github.io/investAPI/users/#getaccountsrequest}
 }

@@ -1,6 +1,6 @@
 #' Загружаем список аккаунтов Тинькофф
 #' 
-#' @description Используется метод https://tinkoff.github.io/investAPI/users/#getaccountsrequest
+#' @description Используется метод \url{https://tinkoff.github.io/investAPI/users/#getaccountsrequest}
 #'
 #' @param token ваш токен API Tinkoff Invest
 #'
