@@ -1,7 +1,6 @@
 # Официальнео python API https://github.com/Tinkoff/invest-python 
 
 # Загружаем библиотеки 
-import pandas as pd
 from tinkoff.invest import Client
 
 
@@ -18,11 +17,7 @@ def from_units_nano_iter(x):
 def get_currency(x):
   return [p["currency"] for p in x]
 
-# Получить список аккаунтов
-def get_my_accounts(TOKEN):
-  with Client(TOKEN) as client:
-      accounts = client.users.get_accounts()
-  return pd.DataFrame(accounts.accounts)
+
       
 
 # Получить портфель
