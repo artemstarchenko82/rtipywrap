@@ -2,6 +2,8 @@
 #' 
 #' @description Используется метод \url{https://tinkoff.github.io/investAPI/users/#getaccountsrequest}
 #'
+#' @return Результат <-  объект класса `tinkoff.invest.schemas.GetAccountsResponse`
+#' 
 #' @param token ваш токен API Tinkoff Invest
 #'
 #' @export
@@ -18,7 +20,8 @@ rti_users_get_accounts <- function(token = Sys.getenv("rti_TOKEN")){
 
 #' Переводим список аккантов GetAccountsResponse в data.frame
 #' 
-#' @description Используется pandas для перевода
+#' @description Используется pandas для перевода объекта класса 
+#' `tinkoff.invest.schemas.GetAccountsResponse` в data.frame
 #'
 #' @export
 as.data.frame.tinkoff.invest.schemas.GetAccountsResponse <- function(x){

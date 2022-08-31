@@ -9,6 +9,9 @@ rti_users_get_accounts(token = Sys.getenv("rti_TOKEN"))
 \arguments{
 \item{token}{ваш токен API Tinkoff Invest}
 }
+\value{
+Результат <-  объект класса \code{tinkoff.invest.schemas.GetAccountsResponse}
+}
 \description{
 Используется метод \url{https://tinkoff.github.io/investAPI/users/#getaccountsrequest}
 }

@@ -7,5 +7,6 @@
 \method{as.data.frame}{tinkoff.invest.schemas.GetAccountsResponse}(x)
 }
 \description{
-Используется pandas для перевода
+Используется pandas для перевода объекта класса
+\code{tinkoff.invest.schemas.GetAccountsResponse} в data.frame
 }
