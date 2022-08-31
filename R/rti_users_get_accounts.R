@@ -1,10 +1,10 @@
 #' Загружаем список аккаунтов Тинькофф
 #' 
-#' @description Используется метод \url{https://tinkoff.github.io/investAPI/users/#getaccountsrequest}
+#' @description Используется метод [GetAccounts](https://tinkoff.github.io/investAPI/users/#getaccountsrequest)
 #'
 #' @return Результат <-  объект класса `tinkoff.invest.schemas.GetAccountsResponse`
 #' 
-#' @param token ваш токен API Tinkoff Invest
+#' @param token [Токен](https://tinkoff.github.io/investAPI/token/) для работы с TINKOFF INVEST API
 #'
 #' @export
 rti_users_get_accounts <- function(token = Sys.getenv("rti_TOKEN")){

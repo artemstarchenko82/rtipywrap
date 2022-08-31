@@ -7,11 +7,11 @@
 rti_users_get_accounts(token = Sys.getenv("rti_TOKEN"))
 }
 \arguments{
-\item{token}{ваш токен API Tinkoff Invest}
+\item{token}{\href{https://tinkoff.github.io/investAPI/token/}{Токен} для работы с TINKOFF INVEST API}
 }
 \value{
 Результат <-  объект класса \code{tinkoff.invest.schemas.GetAccountsResponse}
 }
 \description{
-Используется метод \url{https://tinkoff.github.io/investAPI/users/#getaccountsrequest}
+Используется метод \href{https://tinkoff.github.io/investAPI/users/#getaccountsrequest}{GetAccounts}
 }
