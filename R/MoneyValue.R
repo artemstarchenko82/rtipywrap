@@ -1,3 +1,6 @@
+# Методы для работы с классом 'tinkoff.invest.schemas.MoneyValue'
+
+
 #' Перевод MoneyValue в double
 #' 
 #' @description Переводим класс [MoneyValue](https://tinkoff.github.io/investAPI/operations/#moneyvalue) 

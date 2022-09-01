@@ -18,13 +18,6 @@ rti_operations_get_portfolio <- function(
     
 }
 
-#' Перевеод в число объекта Quotation
-#' 
-#' @export
-as.double.tinkoff.invest.schemas.Quotation <- function(x){
-    paste(x$units, abs(x$nano), sep = ".") |> 
-        as.numeric()
-}
 
 
 
