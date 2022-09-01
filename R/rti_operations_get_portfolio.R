@@ -2,6 +2,11 @@
 #' 
 #' @description Используется метод [GetPortfolio](https://tinkoff.github.io/investAPI/operations/#portfoliorequest)
 #' 
+#' @param account_id идентификатор счёта пользователя. Список всех счетов можно получить
+#' через вызов [rti_users_get_accounts()]
+#' 
+#' @param token [токен](https://tinkoff.github.io/investAPI/token/) для работы с TINKOFF INVEST API 
+#' 
 #' @return Объект класса `tinkoff.invest.schemas.PortfolioResponse`
 #' 
 #' @export
