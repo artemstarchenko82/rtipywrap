@@ -2,12 +2,14 @@
 % Please edit documentation in R/MoneyValue.R
 \name{as.double.tinkoff.invest.schemas.MoneyValue}
 \alias{as.double.tinkoff.invest.schemas.MoneyValue}
-\title{Методы для работы с классом tinkoff.invest.schemas.MoneyValue
-MoneyValue as.double}
+\title{Перевод MoneyValue в double}
 \usage{
 \method{as.double}{tinkoff.invest.schemas.MoneyValue}(x)
 }
+\arguments{
+\item{x}{Объект класса 'tinkoff.invest.schemas.MoneyValue'}
+}
 \description{
-Методы для работы с классом tinkoff.invest.schemas.MoneyValue
-MoneyValue as.double
+Переводим класс \href{https://tinkoff.github.io/investAPI/operations/#moneyvalue}{MoneyValue}
+(денежная сумма в определенной валюте) в \link[base:double]{base::double}.
 }

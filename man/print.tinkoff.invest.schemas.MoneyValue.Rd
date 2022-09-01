@@ -2,10 +2,17 @@
 % Please edit documentation in R/MoneyValue.R
 \name{print.tinkoff.invest.schemas.MoneyValue}
 \alias{print.tinkoff.invest.schemas.MoneyValue}
-\title{Print MoneyValue}
+\title{Печать MoneyValue}
 \usage{
 \method{print}{tinkoff.invest.schemas.MoneyValue}(x)
 }
+\arguments{
+\item{x}{Объект класса 'tinkoff.invest.schemas.MoneyValue'}
+}
+\value{
+Выводим на экран применение к x метода \code{\link[=as.character.tinkoff.invest.schemas.MoneyValue]{as.character.tinkoff.invest.schemas.MoneyValue()}}
+}
 \description{
-Print MoneyValue
+Выводим класс \href{https://tinkoff.github.io/investAPI/operations/#moneyvalue}{MoneyValue}
+на экран.
 }
