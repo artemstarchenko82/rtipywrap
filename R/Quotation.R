@@ -1,18 +1,5 @@
 # Функции для работы с классом 'tinkoff.invest.schemas.Quotation'
 
-#' Перевеод в число объекта Quotation
-#' 
-#' @description Переводим объект класса [Quotation](https://tinkoff.github.io/investAPI/operations/#quotation)
-#' в [base::double()]
-#' 
-#' @param x объект класса 'tinkoff.invest.schemas.Quotation'
-#' 
-#' @export
-as.double.tinkoff.invest.schemas.Quotation <- function(x){
-    paste(x$units, abs(x$nano), sep = ".") |> 
-        as.double()
-}
-
 #' Перевеод в строку объекта Quotation
 #' 
 #' @description Переводим объект класса [Quotation](https://tinkoff.github.io/investAPI/operations/#quotation)
@@ -24,6 +11,22 @@ as.double.tinkoff.invest.schemas.Quotation <- function(x){
 as.character.tinkoff.invest.schemas.Quotation <- function(x){
     paste(x$units, abs(x$nano), sep = ".")
 }
+
+
+#' Перевеод в число объекта Quotation
+#' 
+#' @description Переводим объект класса [Quotation](https://tinkoff.github.io/investAPI/operations/#quotation)
+#' в [base::double()]
+#' 
+#' @param x объект класса 'tinkoff.invest.schemas.Quotation'
+#' 
+#' @export
+as.double.tinkoff.invest.schemas.Quotation <- function(x){
+    as.character(x) |> 
+        as.double()
+}
+
+
 
 
 #' Печать объекта Quotation
