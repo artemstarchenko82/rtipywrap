@@ -6,6 +6,10 @@
 \usage{
 \method{as.data.frame}{tinkoff.invest.schemas.PortfolioResponse}(x)
 }
+\arguments{
+\item{x}{объект класса 'tinkoff.invest.schemas.PortfolioResponse'}
+}
 \description{
-Перевод объекта PortfolioResponse в data.frame
+Конструируем data.frame из данных объекта
+\href{https://tinkoff.github.io/investAPI/operations/#portfolioresponse}{PortfolioResponse}
 }
