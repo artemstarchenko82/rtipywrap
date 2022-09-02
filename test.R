@@ -9,10 +9,15 @@ accounts <- rti_users_get_accounts()
 as.data.frame(accounts) |> View()
 
 # account_id первого аккаунта 
-id <- accounts$accounts[[1]]$id
+account_id <- accounts$accounts[[1]]$id
 
 # получаем портфель 
 portfolio <- rti_operations_get_portfolio(id)
 
-# Переводим в data.frame
 as.data.frame(portfolio) |> View()
+
+# Запрашиваем информацию по иснтрументу
+figi <- portfolio$positions[[1]]$figi
+instrument <- rti_instruments_get_instrument_by(figi)
+
+as.data.frame(instrument) |> View()
