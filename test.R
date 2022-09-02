@@ -21,3 +21,14 @@ figi <- portfolio$positions[[1]]$figi
 instrument <- rti_instruments_get_instrument_by(figi)
 
 as.data.frame(instrument) |> View()
+
+
+# Получаем последнюю цену
+
+figis <- portfolio$positions |> vapply(\(x) x$figi, character(1))
+
+last_prices <- rti_market_data_get_last_prices(figis)
+
+as.data.frame(last_prices)
+
+
