@@ -25,8 +25,16 @@ rti_users_get_accounts <- function(token = Sys.getenv("rti_TOKEN")){
 #'
 #' @export
 as.data.frame.tinkoff.invest.schemas.GetAccountsResponse <- function(x){
-    pd <- reticulate::import("pandas")
     
-    x$accounts |> 
-        pd$DataFrame()
+    a <- x$accounts
+    
+    data.frame(
+        id = a |> vapply(\(x) x$id, character(1)),
+        type = a |> vapply(\(x) x$type$real, integer(1)),
+        type = a |> vapply(\(x) x$type$real, integer(1)),
+        opened_date = do.call(c, a |> lapply(\(x) x$opened_date)),
+        closed_date = do.call(c, a |> lapply(\(x) x$closed_date)),
+        access_level = a |> vapply(\(x) x$access_level$real, integer(1))
+    ) 
+    
 }

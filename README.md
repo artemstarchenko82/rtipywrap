@@ -6,13 +6,11 @@
 Python SDK https://tinkoff.github.io/invest-python/
 
 ## Установка необходимых библиотек python
-Для работы необходимо установить следующие библиотеки: 
+Для работы необходимо установить [SDK Python Tinkoff Invest](https://tinkoff.github.io/invest-python/). Для этого укажите введите в терминале: 
 
 ```shell
 
-$ pip3 install tinkoff-investments
-$ pip3 install numpy
-$ pip3 install pandas 
+$ pip install tinkoff-investments
 
 ```
 
