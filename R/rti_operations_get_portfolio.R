@@ -24,8 +24,6 @@ rti_operations_get_portfolio <- function(
 }
 
 
-
-
 #' Перевод объекта PortfolioResponse в data.frame
 #' 
 #' @description Конструируем data.frame из данных объекта 

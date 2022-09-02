@@ -45,6 +45,6 @@ as.character.tinkoff.invest.schemas.MoneyValue <- function(x){
 #' @export
 
 print.tinkoff.invest.schemas.MoneyValue <- function(x){
-    print(as.character(x))
+    cat(as.character(x))
 }
 
