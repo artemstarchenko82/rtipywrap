@@ -18,7 +18,7 @@ as.data.frame(portfolio) |> View()
 
 # Запрашиваем информацию по иснтрументу
 figi <- portfolio$positions[[1]]$figi
-instrument <- rti_instruments_get_instrument_by(figi)
+instrument <- rti_instruments_get_instrument_by_figi(figi)
 
 as.data.frame(instrument) |> View()
 
@@ -30,5 +30,12 @@ figis <- portfolio$positions |> vapply(\(x) x$figi, character(1))
 last_prices <- rti_market_data_get_last_prices(figis)
 
 as.data.frame(last_prices)
+
+
+# Получаем список валют 
+
+currencies <- rti_instruments_currencies()
+
+as.data.frame(currencies) 
 
 

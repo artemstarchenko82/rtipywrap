@@ -12,7 +12,7 @@
 #' Подробное описание на [InstrumentResponse](https://tinkoff.github.io/investAPI/instruments/#instrumentresponse) 
 #' 
 #' @export
-rti_instruments_get_instrument_by<- function(
+rti_instruments_get_instrument_by_figi<- function(
         figi,
         token = Sys.getenv("rti_TOKEN")
 ){
